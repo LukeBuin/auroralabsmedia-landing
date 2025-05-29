@@ -3,50 +3,74 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aurora Labs Media – Coming Soon</title>
+  <title>Aurora Labs Media</title>
   <style>
     body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
-      color: #fff;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: white;
       text-align: center;
+      padding: 40px 20px;
     }
     h1 {
       font-size: 2.5em;
-      margin-bottom: 0.3em;
+      margin-bottom: 0.4em;
     }
     p {
-      font-size: 1.1em;
-      margin-bottom: 2em;
-      max-width: 500px;
+      font-size: 1.2em;
+      max-width: 600px;
+      margin: 0 auto 2em;
+      line-height: 1.6em;
     }
-    .buy-button-wrapper {
-      margin-top: 20px;
+    .card {
+      background: #fff;
+      color: #111;
+      border-radius: 10px;
+      padding: 25px;
+      max-width: 400px;
+      margin: 0 auto;
+      box-shadow: 0 0 20px rgba(0,0,0,0.2);
     }
-    .logo {
-      width: 100px;
-      margin-bottom: 20px;
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+    .card h2 {
+      font-size: 1.4em;
+      margin-bottom: 0.5em;
+    }
+    .card p {
+      font-size: 1em;
+      margin-bottom: 1em;
+    }
+    .btn {
+      display: inline-block;
+      padding: 12px 25px;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 1em;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background: #0056b3;
     }
   </style>
 </head>
 <body>
-  <img src="aurora-logo.png" alt="Aurora Labs Media" class="logo" />
-  <h1>Aurora Labs Media</h1>
-  <p>We’re building something powerful. Our AI models are almost ready to launch. Stay tuned...</p>
 
-  <div class="buy-button-wrapper">
-    <!-- Stripe Buy Button Code -->
-    <script async src="https://js.stripe.com/v3/buy-button.js"></script>
-    <stripe-buy-button
-      buy-button-id="buy_btn_1RTucF2MpO6tr4pYlibNp0um"
-      publishable-key="pk_live_51RTWCy2MpO6tr4pYa9c6mogHVqlaJENN4sr9QT6trNNon9CG73EHxazK45OG8XWMjfZR3Yeh5uF2kWITEVuO2UF200fhM8JgjI">
-    </stripe-buy-button>
+  <h1>Aurora Labs Media</h1>
+  <p>We're building something powerful. Our <strong>virtual creators</strong> are almost ready to launch. Stay tuned...</p>
+
+  <div class="card">
+    <img src="https://your-cdn.com/ava-rae-card.png" alt="Ava Rae VIP Access" />
+    <h2>Ava Rae Vip Access 💕</h2>
+    <p>Exclusive private content, chats, and VIP monthly drops from Ava Rae.</p>
+    <a class="btn" href="https://buy.stripe.com/28EeV61fifuq9eM5DZ9IQ00">Subscribe</a>
   </div>
+
 </body>
 </html>
