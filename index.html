@@ -1,59 +1,52 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aurora Labs Media — Coming Soon</title>
+  <title>Aurora Labs Media – Coming Soon</title>
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+      color: #fff;
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
       height: 100vh;
-      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-      color: white;
       text-align: center;
-      padding: 1rem;
-    }
-    .container {
-      max-width: 600px;
-    }
-    .logo {
-      width: 120px;
-      margin-bottom: 20px;
     }
     h1 {
-      font-size: 3rem;
-      margin-bottom: 1rem;
+      font-size: 2.5em;
+      margin-bottom: 0.3em;
     }
     p {
-      font-size: 1.2rem;
-      margin-bottom: 2rem;
+      font-size: 1.1em;
+      margin-bottom: 2em;
+      max-width: 500px;
     }
-    .button {
-      display: inline-block;
-      padding: 0.8rem 1.5rem;
-      background-color: #007bff;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
+    .buy-button-wrapper {
+      margin-top: 20px;
     }
-    .button:hover {
-      background-color: #0056b3;
+    .logo {
+      width: 100px;
+      margin-bottom: 20px;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-  <!-- New working logo -->
-<img src="ava-logo.png" alt="Ava Rae Construction Logo" style="max-width: 200px;" />
-    <h1>Coming Soon</h1>
-    <p>
-      Aurora Labs Media is currently building the future of AI models and immersive fan experiences. Stay tuned.
-    </p>
-    <a href="mailto:admin@auroralabsmedia.com" class="button">Contact Us</a>
+  <img src="aurora-logo.png" alt="Aurora Labs Media" class="logo" />
+  <h1>Aurora Labs Media</h1>
+  <p>We’re building something powerful. Our AI models are almost ready to launch. Stay tuned...</p>
+
+  <div class="buy-button-wrapper">
+    <!-- Stripe Buy Button Code -->
+    <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+    <stripe-buy-button
+      buy-button-id="buy_btn_1RTucF2MpO6tr4pYlibNp0um"
+      publishable-key="pk_live_51RTWCy2MpO6tr4pYa9c6mogHVqlaJENN4sr9QT6trNNon9CG73EHxazK45OG8XWMjfZR3Yeh5uF2kWITEVuO2UF200fhM8JgjI">
+    </stripe-buy-button>
   </div>
 </body>
 </html>
